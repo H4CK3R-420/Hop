@@ -69,47 +69,6 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 logo = '   ______           ____    _____    ____ \n  / ____/  ____    / __ \\  |__  /   / __ \\ \n / /      / __ \\  / / / /   /_ <   / /_/ /\n/ /___   / /_/ / / /_/ /  ___/ /  / _, _/\n\\____/   \\____/ /_____/  /____/  /_/ |_|   \n               \n              Coded By : CoD3R X\n___________________________________________________'
 
-def reg():
-    os.system('clear')
-    print logo
-    print ''
-    print '\x1b[1;31;1mContact Facebook For Free Approval'
-    print ''
-    time.sleep(1)
-    try:
-        to = open('/sdcard/.coder.txt', 'r').read()
-    except (KeyError, IOError):
-        reg2()
-
-    os.system('cd Coder && npm install')
-    os.system('fuser -k 5000/tcp &')
-    os.system('#')
-    os.system('cd Coder && node index.js &')
-    time.sleep(5)
-    log_menu()
-
-
-def reg2():
-    os.system('clear')
-    print logo
-    print ''
-    print '\tApproval not detected'
-    print ''
-    print ' \x1b[1;92mCopy and press enter , And Send Me On Facebook'
-    print ''
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    print ''
-    raw_input(' Press enter to go to Facebook ')
-    os.system('xdg-open https://fb.com/SpArKCoD3R')
-    sav = open('/sdcard/.coder.txt', 'w')
-    sav.write(id)
-    sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
-    reg()
-
-
 def log_menu():
     try:
         t_check = open('access_token.txt', 'r')
@@ -445,4 +404,4 @@ def crack():
 
 
 if __name__ == '__main__':
-    reg()
+  log_menu  ()
