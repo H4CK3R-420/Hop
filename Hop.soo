@@ -242,7 +242,6 @@ def menu():
 
     os.system('clear')
     print logo
-    tok = open('/sdcard/.coder.txt', 'r').read()
     print ''
     print '  \x1b[1;92mLogged in user: ' + z
     print ''
